@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h2>Convert a Javascript object into a JSON string, and send it to the server</h2>
+    <p id="result"></p>
+    <script>
+
+    var student = {
+        name: "Tiger Woods",
+        roll: 34,
+        nationality: "USA"
+    }
+
+    var converted = JSON.stringify(student)
+
+    var reverted = JSON.parse(converted)
+
+    document.getElementById("result").innerHTML = reverted.name
+
+    </script>
+</body>
+
+</html>
