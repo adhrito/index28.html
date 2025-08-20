@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        const makeTea = new Promise((resolve, reject) => {
+            let waterBoil = true;
+
+            if (waterBoiled) {
+                resolve("Tea is ready!!!!!!!!!!!!");
+            } else {
+                reject("Failed!!!!!!!!! Water not boiling.")
+            }
+        });
+
+        makeTea.then((message) => {
+            console,log(message);
+        })
+        .catch((error) => {
+            console.log(error);
+        });
+
+
+    </script>
+</body>
+
+</html>
